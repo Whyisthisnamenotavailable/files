@@ -16,7 +16,6 @@ def clean_cache():
     except FileExistsError:
         shutil.rmtree(created_cache, ignore_errors=False, onerror=None)
         os.makedirs("cache", exist_ok=True)
-    # return created_cache  # kan weg?
 
 
 def cache_zip(zip_file_path, cache_dir_path):
